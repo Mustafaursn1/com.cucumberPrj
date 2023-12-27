@@ -15,5 +15,7 @@ public class EbayPages {
 
     @FindBy(xpath = "//*[@id='gh-ac']")
     public WebElement searchBox;
+    @FindBy(xpath = "//div[@class='srp-controls__control srp-controls__count']")
+    public WebElement resultText;
 
 }
