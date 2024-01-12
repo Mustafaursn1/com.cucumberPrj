@@ -1,13 +1,16 @@
 package stepDefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import pages.FacebookPages;
 import utilities.ConfigurationReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 public class FacebookStepdefs {
     FacebookPages facePage=new FacebookPages();
+    Faker faker=new Faker();
 
     @Given("User goes to facebook")
     public void user_goes_to_facebook() {
@@ -16,6 +19,10 @@ public class FacebookStepdefs {
     }
     @Then("user enters email")
     public void user_enters_email() {
+        String  userEmail=faker.internet().emailAddress();
+        facePage.email.sendKeys(userEmail);
+
+
 
 
 
