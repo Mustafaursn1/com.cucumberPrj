@@ -3,6 +3,8 @@ package stepDefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import pages.FacebookPages;
 import utilities.ConfigurationReader;
 import utilities.Driver;
@@ -29,10 +31,14 @@ public class FacebookStepdefs {
     }
     @Then("User enters password")
     public void user_enters_password() {
+        facePage.password.sendKeys(faker.internet().password(), Keys.ENTER);
 
     }
     @Then("It tests whether the user entered with incorrect data")
     public void it_tests_whether_the_user_entered_with_incorrect_data() {
+
+        Assert.assertTrue(facePage.basarisizGiris.isDisplayed());
+
 
     }
 
