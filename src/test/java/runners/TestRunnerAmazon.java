@@ -13,6 +13,6 @@ import io.cucumber.junit.CucumberOptions;
         plugin = {"pretty", "html:target/cucumber-reports"} // Raporlama için kullanılacak eklentiler
 
 )
-public class TestRunner {
+public class TestRunnerAmazon {
     // Boş bir sınıf, sadece bu sınıfı çalıştırarak senaryoları başlatabilirsiniz.
 }

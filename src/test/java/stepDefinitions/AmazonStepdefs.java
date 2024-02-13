@@ -34,4 +34,20 @@ public class AmazonStepdefs {
     public void userClosesTheAmazon() {
         Driver.quitDriver();
     }
+
+    @Then("user searchs  Selenium")
+    public void userSearchsSelenium() {
+
+        amazonPages.searchBox.sendKeys("Selenium",Keys.ENTER);
+
+
+    }
+
+    @And("user checks if the result include Selenium")
+    public void userChecksIfTheResultIncludeSelenium() {
+        String expectedResult=amazonPages.writingOfResult.getText();
+        Assert.assertTrue(expectedResult.contains("Selenium"));
+
+
+    }
 }

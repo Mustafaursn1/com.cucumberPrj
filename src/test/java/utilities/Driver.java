@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chromium.ChromiumDriverCommandExecutor;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 
 import java.time.Duration;
 
@@ -36,6 +38,10 @@ public class Driver {
                     driver = new EdgeDriver();
                     break;
 
+                case "safari":
+                    WebDriverManager.safaridriver().setup();
+                    SafariOptions options = new SafariOptions();
+                    driver = new SafariDriver(options);
 
 
                 default:
