@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -44,4 +45,21 @@ public class EbayStepdefs {
 
     }
 
+    @Then("user search the iphone")
+    public void userSearchTheIphone() {
+
+        ebayPages.searchBox.sendKeys("Iphone",Keys.ENTER);
+
+
+
+    }
+
+    @And("User check the result of the result if that inclueds iphone")
+    public void userCheckTheResultOfTheResultIfThatIncluedsIphone() {
+        String expectedResult="Iphone";
+        String actuallResult=ebayPages.resultText.getText();
+        Assert.assertTrue(expectedResult.contains(actuallResult));
+
+
+    }
 }

@@ -6,13 +6,29 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "src/test/resources/features", // Senaryo ve özellik dosyalarının bulunduğu dizin
+        features = "/Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/resources/features", // Senaryo ve özellik dosyalarının bulunduğu dizin
         glue = "stepDefinitions", // Adım tanımlama sınıflarının bulunduğu paket
-        tags = "@ebay", // Çalıştırılacak senaryoları belirten etiketler
+        tags = "@amazonSearch", // Çalıştırılacak senaryoları belirten etiketler
+        dryRun = false,
 
         plugin = {"pretty", "html:target/cucumber-reports"} // Raporlama için kullanılacak eklentiler
+
 
 )
 public class TestRunnerEbay {
     // Boş bir sınıf, sadece bu sınıfı çalıştırarak senaryoları başlatabilirsiniz.
+
+    /*
+    Runner Class'1 TestNG'deki XML mantigi ile çalisir. folistirmok istedigimiz senortolara tog belirtiriz ve belirttigimiz tog'lari çalistirir. XML deki gibi istedigimiz testieri çalistirmok için kullaniriz.
+Runner class body'si bostur ve runner class'in ekleyecegimiz notasyonlar aktive eder.
+Bu class'do kullanacogamiz 2 adet notasyon vardir
+-@RunWith(Cucumber.class) notasyonu Runner class'ina çalisma özelligi ekler.
+Bu notasyon oldugu için Cucumber frameworkumuzde Junit kullanmayz tercih ederiz
+-@CucumberOptions notasyonu içinde
+features : Runeer dosyasinin feature dosyasini nereden bulacagani tarif eder glue : stepDefinitions yolunu belintiriz
+togs : Hangi tag'i çalistirmak istiyorsak onu belli eder
+dryRun :2 secenek vardir
+dryRun = true; dersek testimizi çolistirmadan eksik adimlori bize verir
+ dryRun = false; testlerimizi driver ile çalistzrir.
+     */
 }
