@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.hr.Kad;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.EbayPages;
@@ -39,11 +40,7 @@ public class EbayStepdefs {
 
     }
 
-    @Then("User close ebay")
-    public void user_close_ebay() {
-        Driver.quitDriver();
 
-    }
 
     @Then("user search the iphone")
     public void userSearchTheIphone() {
@@ -60,6 +57,24 @@ public class EbayStepdefs {
         String actuallResult=ebayPages.resultText.getText();
         Assert.assertTrue(expectedResult.contains(actuallResult));
 
+
+    }
+
+    @Then("user search the Samsung")
+    public void userSearchTheSamsung() {
+        ebayPages.searchBox.sendKeys("Samsung", Keys.ENTER);
+    }
+
+    @And("User check the result of the result if that inclueds Samsung")
+    public void userCheckTheResultOfTheResultIfThatIncluedsSamsung() {
+        String expectedResult="Samsung";
+        String actuallResult=ebayPages.resultText.getText();
+        Assert.assertTrue(expectedResult.contains(actuallResult));
+    }
+
+    @Then("User close ebay")
+    public void user_close_ebay() {
+        Driver.quitDriver();
 
     }
 }

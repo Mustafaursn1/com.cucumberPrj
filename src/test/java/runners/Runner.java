@@ -6,16 +6,17 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "/Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/resources/features", // Senaryo ve özellik dosyalarının bulunduğu dizin
+        features = "src/test/java/stepDefinitions", // Senaryo ve özellik dosyalarının bulunduğu dizin
         glue = "stepDefinitions", // Adım tanımlama sınıflarının bulunduğu paket
-        tags = "@amazonSearch", // Çalıştırılacak senaryoları belirten etiketler
+        tags = "@backraoundTry", // Çalıştırılacak senaryoları belirten etiketler
+        //iki tag ayni anda calistirmak icin "@tag1 or @tag2 " yazariz
         dryRun = false,
 
         plugin = {"pretty", "html:target/cucumber-reports"} // Raporlama için kullanılacak eklentiler
 
 
 )
-public class TestRunnerEbay {
+public class Runner {
     // Boş bir sınıf, sadece bu sınıfı çalıştırarak senaryoları başlatabilirsiniz.
 
     /*

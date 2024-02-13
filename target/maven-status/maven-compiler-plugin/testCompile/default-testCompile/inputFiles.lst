@@ -4,7 +4,7 @@
 /Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/utilities/ReusableMethods.java
 /Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/utilities/ConfigurationReader.java
 /Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/utilities/CrossDriver.java
-/Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/runners/TestRunnerEbay.java
+/Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/runners/Runner.java
 /Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/stepDefinitions/AmazonStepdefs.java
 /Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/stepDefinitions/EbayStepdefs.java
 /Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/java/utilities/Driver.java
