@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/java/stepDefinitions", // Senaryo ve özellik dosyalarının bulunduğu dizin
         glue = "stepDefinitions", // Adım tanımlama sınıflarının bulunduğu paket
-        tags = "@backraoundTry", // Çalıştırılacak senaryoları belirten etiketler
+        tags = "@paramater", // Çalıştırılacak senaryoları belirten etiketler
         //iki tag ayni anda calistirmak icin "@tag1 or @tag2 " yazariz
         dryRun = false,
 
