@@ -1,8 +1,10 @@
 package stepDefinitions;
 
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import io.cucumber.java.hr.Kad;
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
@@ -14,6 +16,7 @@ import java.util.ArrayList;
 
 public class EbayStepdefs {
     EbayPages ebayPages = new EbayPages();
+    Faker faker=new Faker();
 
     @Given("User goes to ebay")
     public void user_goes_to_ebay() {
@@ -75,6 +78,34 @@ public class EbayStepdefs {
     @Then("User close ebay")
     public void user_close_ebay() {
         Driver.quitDriver();
+
+    }
+
+    @When("User click einlogin button")
+    public void userClickEinloginButton() {
+        ebayPages.einLogin.click();
+        ebayPages.cookies.click();
+
+    }
+
+    @Then("User enters  invalid email and enter")
+    public void userEntersInvalidEmailAndEnter() {
+        String invalidEmail=faker.internet().emailAddress();
+        ebayPages.emailBox.click();
+
+
+    }
+
+    @Then("User enters invalid password and enter")
+    public void userEntersInvalidPasswordAndEnter() {
+        String invalidPass=faker.internet().password();
+        ebayPages.passwortBox.click();
+
+    }
+
+    @And("User verifies that there is no login with incorrect user information.")
+    public void userVerifiesThatThereIsNoLoginWithIncorrectUserInformation() {
+        Assert.assertTrue(ebayPages.textOfInvalidUser.isDisplayed());
 
     }
 }
