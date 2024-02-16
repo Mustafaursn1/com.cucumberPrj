@@ -80,10 +80,9 @@ public class AmazonStepdefs {
     public void userChecksThatIfIncludesCurrentUrl(String url) {
 
         String actualUrl = Driver.getDriver().getCurrentUrl();
-        String expectedurl = url;
         System.out.println("url:"+url);
 
-        Assert.assertTrue(actualUrl.contains(expectedurl));
+        Assert.assertTrue(url.equals(actualUrl));
 
 
     }
@@ -101,5 +100,10 @@ public class AmazonStepdefs {
 
 
 
+    }
+
+    @And("user closes the page")
+    public void userClosesThePage() {
+        Driver.quitDriver();
     }
 }
