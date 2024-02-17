@@ -11,7 +11,7 @@ import utilities.Driver;
 public class BlueRentaCarStepdefs {
     BlueRentalCarsPages blueRentalCarsPages = new BlueRentalCarsPages();
     Faker faker = new Faker();
-    Actions actions=new Actions(Driver.getDriver());
+    Actions actions = new Actions(Driver.getDriver());
 
     @Then("User clicks the logintext")
     public void userClicksTheLogintext() {
@@ -22,16 +22,15 @@ public class BlueRentaCarStepdefs {
 
     @And("User enter the invalid Email")
     public void userEnterTheInvalidEmail() {
-        String invalidEmail=faker.internet().emailAddress();
+        String invalidEmail = faker.internet().emailAddress();
         blueRentalCarsPages.userEmail.sendKeys(invalidEmail);
-
 
 
     }
 
     @And("User enter the invalid Password")
     public void userEnterTheInvalidPassword() {
-        String invalidPassword=faker.internet().password();
+        String invalidPassword = faker.internet().password();
         blueRentalCarsPages.userPassword.sendKeys(invalidPassword);
 
     }
@@ -51,8 +50,8 @@ public class BlueRentaCarStepdefs {
 
     @And("User writes on consol the alerttext")
     public void userWritesOnConsolTheAlerttext() {
-        String alertText=blueRentalCarsPages.warningMessage.getText();
-        System.out.println("AlertText: "+alertText);
+        String alertText = blueRentalCarsPages.warningMessage.getText();
+        System.out.println("AlertText: " + alertText);
     }
 
     @And("Detects no user login")
@@ -63,5 +62,18 @@ public class BlueRentaCarStepdefs {
     @And("user closes {string}")
     public void userCloses(String arg0) {
         Driver.quitDriver();
+    }
+
+    @And("User tries to enter {string}")
+    public void userTriesToEnter(String invalidCredential) {
+        blueRentalCarsPages.userEmail.sendKeys(invalidCredential);
+
+
+    }
+
+    @And("User tries to enter with {string}")
+    public void userTriesToEnterWith(String invalidPass) {
+        blueRentalCarsPages.userPassword.sendKeys(invalidPass);
+
     }
 }
