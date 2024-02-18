@@ -6,17 +6,20 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin = {"html:target/cucumber-reports.html",
+        "json:target/json-reports/cucumber.json",
+        "junit:target/xml-report/cucumber.xml"}, // Raporlama için kullanılacak eklentiler
         features = "src/test/resources/features", // Senaryo ve özellik dosyalarının bulunduğu dizin
         glue = "stepDefinitions", // Adım tanımlama sınıflarının bulunduğu paket
-        tags = "@dataBase", // Çalıştırılacak senaryoları belirten etiketler
+        tags = "@java_", // Çalıştırılacak senaryoları belirten etiketler
         //iki tag ayni anda calistirmak icin "@tag1 or @tag2 " yazariz
-        dryRun = false,
+        dryRun = false
 
-        plugin = {"pretty", "html:target/cucumber-reports"} // Raporlama için kullanılacak eklentiler
+        //plugin = {"pretty", "html:target/cucumber-reports"} // Raporlama için kullanılacak eklentiler
 
 
 )
-public class Runner {
+public class TestRunner {
     // Boş bir sınıf, sadece bu sınıfı çalıştırarak senaryoları başlatabilirsiniz.
 
     /*

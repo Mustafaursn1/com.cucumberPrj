@@ -1,7 +1,0 @@
-stepDefinitions/GuruStepdefs.class
-runners/Runner.class
-stepDefinitions/BlueRentaCarStepdefs.class
-pages/GuruPages.class
-pages/BlueRentalCarsPages.class
-pages/DataBasePages.class
-stepDefinitions/DataBase_MyStepdefs.class

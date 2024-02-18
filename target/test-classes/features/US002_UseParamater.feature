@@ -13,7 +13,7 @@ Feature: US002 Parametre Kullanimi
     #Feature dosyasinda  parametreli arama yaptigimizda "" icindeki string degeri stepDefs bir kere parametreli method
   #olusturur ve yeni bir arama yapmak istedigimizde tekrar meth. olusturmadan ""
   # string ifadeyi degistirmemiz yeterli olur.Dinamik bir cod yazmis oluruz
-
+@java_
   Scenario: TC02 Kullanici amazonda parametreli arama yapar
 
     Then user search "Java" by Amazon
