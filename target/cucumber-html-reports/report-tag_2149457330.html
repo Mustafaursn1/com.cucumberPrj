@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
         <td>1</td>
-      <td>19 Feb 2024, 17:27</td>
+      <td>19 Feb 2024, 18:14</td>
     </tr>
   </tbody>
 </table>
@@ -129,19 +129,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Brc</td>
-          <td      class="passed"    >21</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >15</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">21</td>
 
-          <td  class="passed"    >3</td>
-          <td >0</td>
+          <td  class="passed"    >1</td>
+          <td  class="failed"    >2</td>
           <td class="total">3</td>
 
-          <td class="duration" data-value="15652714000">15.652</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="8045172000">8.045</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -184,12 +184,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">6.414</span>
+  <span class="lead-duration duration">5.489</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">User tries to enter wit the invalid credential</span>
 
@@ -200,16 +200,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -219,7 +219,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -227,7 +227,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user goes <span class="argument">&quot;blueRentCarUrl&quot;</span></span>
 
-  <span class="lead-duration duration">4.417</span>
+  <span class="lead-duration duration">4.414</span>
 
 </div>
 
@@ -254,7 +254,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User clicks the logintext</span>
 
-  <span class="lead-duration duration">0.995</span>
+  <span class="lead-duration duration">0.982</span>
 
 </div>
 
@@ -281,7 +281,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User tries to enter <span class="argument">&quot;Manager5@gmail.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.057</span>
+  <span class="lead-duration duration">0.054</span>
 
 </div>
 
@@ -308,7 +308,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User tries to enter with <span class="argument">&quot;Manager5!&quot;</span></span>
 
-  <span class="lead-duration duration">0.021</span>
+  <span class="lead-duration duration">0.020</span>
 
 </div>
 
@@ -331,11 +331,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">User clicks login button</span>
 
-  <span class="lead-duration duration">0.225</span>
+  <span class="lead-duration duration">0.017</span>
 
 </div>
 
@@ -343,6 +343,47 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt; could not be scrolled into view
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0620b519-9758-4908-8602-c67a3279a8c5, clickElement {id=2dd48cc4-cd55-4add-a4f5-3027e229d1aa}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:debuggerAddress: 127.0.0.1:33822, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.3.0, moz:processID: 5618, moz:profile: /var/folders/4p/1x9hkv8d6xx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:33822/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on mac (0620b519-9758-4908-8602-c67a3279a8c5)] -&gt; xpath: //button[text()=' Login']]
+Session ID: 0620b519-9758-4908-8602-c67a3279a8c5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at stepDefinitions.BlueRentaCarStepdefs.userClicksLoginButton(BlueRentaCarStepdefs.java:41)
+	at &#10045;.User clicks login button(file:///Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/resources/features/PracticeScenerioOutline.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -358,11 +399,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Detects no user login</span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -385,11 +426,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user closes the page</span>
 
-  <span class="lead-duration duration">0.676</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -434,12 +475,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.737</span>
+  <span class="lead-duration duration">0.710</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">User tries to enter wit the invalid credential</span>
 
@@ -450,16 +491,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-4" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-4">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -469,7 +510,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-4" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -477,7 +518,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user goes <span class="argument">&quot;blueRentCarUrl&quot;</span></span>
 
-  <span class="lead-duration duration">2.879</span>
+  <span class="lead-duration duration">0.145</span>
 
 </div>
 
@@ -504,7 +545,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User clicks the logintext</span>
 
-  <span class="lead-duration duration">0.910</span>
+  <span class="lead-duration duration">0.484</span>
 
 </div>
 
@@ -531,7 +572,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User tries to enter <span class="argument">&quot;Manager6@gmail.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.054</span>
+  <span class="lead-duration duration">0.039</span>
 
 </div>
 
@@ -558,7 +599,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User tries to enter with <span class="argument">&quot;Manager6!&quot;</span></span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.032</span>
 
 </div>
 
@@ -581,11 +622,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">User clicks login button</span>
 
-  <span class="lead-duration duration">0.219</span>
+  <span class="lead-duration duration">0.008</span>
 
 </div>
 
@@ -593,6 +634,47 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt; could not be scrolled into view
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [0620b519-9758-4908-8602-c67a3279a8c5, clickElement {id=4d6411cd-738a-4c13-9e11-c296530d507d}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0.1, moz:accessibilityChecks: false, moz:buildID: 20240205133611, moz:debuggerAddress: 127.0.0.1:33822, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.3.0, moz:processID: 5618, moz:profile: /var/folders/4p/1x9hkv8d6xx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:33822/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on mac (0620b519-9758-4908-8602-c67a3279a8c5)] -&gt; xpath: //button[text()=' Login']]
+Session ID: 0620b519-9758-4908-8602-c67a3279a8c5
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+	at stepDefinitions.BlueRentaCarStepdefs.userClicksLoginButton(BlueRentaCarStepdefs.java:41)
+	at &#10045;.User clicks login button(file:///Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/resources/features/PracticeScenerioOutline.feature:9)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -608,11 +690,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Detects no user login</span>
 
-  <span class="lead-duration duration">0.013</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -635,11 +717,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">user closes the page</span>
 
-  <span class="lead-duration duration">0.639</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -684,10 +766,10 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">4.500</span>
+  <span class="lead-duration duration">1.844</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-5">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
 
 <div class="brief passed">
   <span class="keyword indention">Scenario Outline</span>
@@ -700,14 +782,14 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-5" class="collapse collapsable-details ">
+  <div id="element-7" class="collapse collapsable-details ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-6">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
 
 <div class="brief passed">
   <span class="keyword indention">Steps</span>
@@ -719,7 +801,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-6" class="inner-level collapse collapsable-details ">
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -727,7 +809,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user goes <span class="argument">&quot;blueRentCarUrl&quot;</span></span>
 
-  <span class="lead-duration duration">2.646</span>
+  <span class="lead-duration duration">0.119</span>
 
 </div>
 
@@ -754,7 +836,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User clicks the logintext</span>
 
-  <span class="lead-duration duration">0.902</span>
+  <span class="lead-duration duration">0.508</span>
 
 </div>
 
@@ -781,7 +863,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User tries to enter <span class="argument">&quot;Manager7@hotmail.com&quot;</span></span>
 
-  <span class="lead-duration duration">0.054</span>
+  <span class="lead-duration duration">0.095</span>
 
 </div>
 
@@ -808,7 +890,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User tries to enter with <span class="argument">&quot;Manager7!&quot;</span></span>
 
-  <span class="lead-duration duration">0.019</span>
+  <span class="lead-duration duration">0.030</span>
 
 </div>
 
@@ -835,7 +917,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">User clicks login button</span>
 
-  <span class="lead-duration duration">0.218</span>
+  <span class="lead-duration duration">0.224</span>
 
 </div>
 
@@ -862,7 +944,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Detects no user login</span>
 
-  <span class="lead-duration duration">0.014</span>
+  <span class="lead-duration duration">0.023</span>
 
 </div>
 
@@ -889,7 +971,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user closes the page</span>
 
-  <span class="lead-duration duration">0.643</span>
+  <span class="lead-duration duration">0.843</span>
 
 </div>
 

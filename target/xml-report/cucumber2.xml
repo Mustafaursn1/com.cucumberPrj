@@ -1,35 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="15.878" tests="3" skipped="0" failures="0" errors="0">
-<testcase classname="US007 Blue RentaCar Camp" name="User tries to enter wit the invalid credential - Example #1.1" time="6.419">
+<testsuite name="Cucumber" time="11.151" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Us009_Practice Url and User UI Testing" name=":Test of User and Url - Example #1.1" time="11.019">
 <system-out><![CDATA[
-Given user goes "blueRentCarUrl"............................................passed
-Then User clicks the logintext..............................................passed
-And User tries to enter "Manager5@gmail.com"................................passed
-And User tries to enter with "Manager5!"....................................passed
-And User clicks login button................................................passed
-And Detects no user login...................................................passed
-And user closes the page....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US007 Blue RentaCar Camp" name="User tries to enter wit the invalid credential - Example #1.2" time="4.741">
-<system-out><![CDATA[
-Given user goes "blueRentCarUrl"............................................passed
-Then User clicks the logintext..............................................passed
-And User tries to enter "Manager6@gmail.com"................................passed
-And User tries to enter with "Manager6!"....................................passed
-And User clicks login button................................................passed
-And Detects no user login...................................................passed
-And user closes the page....................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="US007 Blue RentaCar Camp" name="User tries to enter wit the invalid credential - Example #1.3" time="4.502">
-<system-out><![CDATA[
-Given user goes "blueRentCarUrl"............................................passed
-Then User clicks the logintext..............................................passed
-And User tries to enter "Manager7@hotmail.com"..............................passed
-And User tries to enter with "Manager7!"....................................passed
-And User clicks login button................................................passed
-And Detects no user login...................................................passed
+Given user goes "webUniUrl".................................................passed
+Then User goes the loginPortal..............................................passed
+And User clicks loginPortal.................................................passed
+And User goes ohher Window..................................................passed
+And User waits 1 moments....................................................passed
+And User enters Username to  box of  "tomy".................................passed
+And User enters password to box of "123gute.@gmail.com".....................passed
+And User clicks loginButton.................................................passed
+And User makes a test what writing is validation failed.....................passed
+And User write ok and closes the PopUp......................................passed
+And user returns the first page.............................................passed
+And User makes a test what user is on first page............................passed
 And user closes the page....................................................passed
 ]]></system-out>
 </testcase>

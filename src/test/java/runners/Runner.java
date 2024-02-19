@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         "junit:target/xml-report/cucumber2.xml"}, // Raporlama için kullanılacak eklentiler
         features = "src/test/resources/features", // Senaryo ve özellik dosyalarının bulunduğu dizin
         glue = "stepDefinitions", // Adım tanımlama sınıflarının bulunduğu paket
-        tags = "@grp1", // Çalıştırılacak senaryoları belirten etiketler
+        tags = "@WebDriverUrl", // Çalıştırılacak senaryoları belirten etiketler
         //iki tag ayni anda calistirmak icin "@tag1 or @tag2 " yazariz
         dryRun = false
 
