@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 
 
 )
-public class TestRunner {
+public class Runner {
     // Boş bir sınıf, sadece bu sınıfı çalıştırarak senaryoları başlatabilirsiniz.
 
     /*

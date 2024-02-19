@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.878" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="US007 Blue RentaCar Camp" name="User tries to enter wit the invalid credential - Example #1.1" time="6.419">
+<system-out><![CDATA[
+Given user goes "blueRentCarUrl"............................................passed
+Then User clicks the logintext..............................................passed
+And User tries to enter "Manager5@gmail.com"................................passed
+And User tries to enter with "Manager5!"....................................passed
+And User clicks login button................................................passed
+And Detects no user login...................................................passed
+And user closes the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US007 Blue RentaCar Camp" name="User tries to enter wit the invalid credential - Example #1.2" time="4.741">
+<system-out><![CDATA[
+Given user goes "blueRentCarUrl"............................................passed
+Then User clicks the logintext..............................................passed
+And User tries to enter "Manager6@gmail.com"................................passed
+And User tries to enter with "Manager6!"....................................passed
+And User clicks login button................................................passed
+And Detects no user login...................................................passed
+And user closes the page....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="US007 Blue RentaCar Camp" name="User tries to enter wit the invalid credential - Example #1.3" time="4.502">
+<system-out><![CDATA[
+Given user goes "blueRentCarUrl"............................................passed
+Then User clicks the logintext..............................................passed
+And User tries to enter "Manager7@hotmail.com"..............................passed
+And User tries to enter with "Manager7!"....................................passed
+And User clicks login button................................................passed
+And Detects no user login...................................................passed
+And user closes the page....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

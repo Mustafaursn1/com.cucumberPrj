@@ -1,6 +1,6 @@
 Feature: US007 Blue RentaCar Camp
 
-  @Brc
+  @Brc @grp1
   Scenario Outline: User tries to enter wit the invalid credential
     Given user goes "blueRentCarUrl"
     Then User clicks the logintext

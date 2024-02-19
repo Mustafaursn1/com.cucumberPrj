@@ -9,13 +9,13 @@ import utilities.Driver;
 public class Hooks {
 
     @After
-    public void tearDown(Scenario scenario) {
-        final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
+    public void tearDown(Scenario scenario){
+        final byte[] screenshot=((TakesScreenshot)
+                Driver.getDriver ()).getScreenshotAs(OutputType.BYTES );
         if (scenario.isFailed()) {
-            scenario.attach(screenshot, "image/png", "screenshots");
+            scenario.attach(screenshot, "image/png","screenshots");
         }
-        Driver.quitDriver();
-
+        Driver.quitDriver ();
     }
 
 }
