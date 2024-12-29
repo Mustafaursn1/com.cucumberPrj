@@ -23,7 +23,8 @@ public class Runner {
     // Boş bir sınıf, sadece bu sınıfı çalıştırarak senaryoları başlatabilirsiniz.
 
     /*
-    Runner Class'1 TestNG'deki XML mantigi ile çalisir. folistirmok istedigimiz senortolara tog belirtiriz ve belirttigimiz tog'lari çalistirir. XML deki gibi istedigimiz testieri çalistirmok için kullaniriz.
+    Runner Class'1 TestNG'deki XML mantigi ile çalisir. folistirmok istedigimiz senortolara tog belirtiriz ve belirttigimiz tog'lari çalistirir.
+    XML deki gibi istedigimiz testieri çalistirmok için kullaniriz.
 Runner class body'si bostur ve runner class'in ekleyecegimiz notasyonlar aktive eder.
 Bu class'do kullanacogamiz 2 adet notasyon vardir
 -@RunWith(Cucumber.class) notasyonu Runner class'ina çalisma özelligi ekler.

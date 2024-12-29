@@ -12,4 +12,5 @@ Feature: Amazon Search
     Then user searchs  Selenium
     And user checks if the result include Selenium
     And user closes the Amazon
+    And user quit the Bbrowser
 

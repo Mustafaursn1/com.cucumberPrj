@@ -1,19 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.243" tests="2" skipped="0" failures="0" errors="0">
-<testcase classname="US002 Parametre Kullanimi" name="TC01 Kullanici amazonda parametreli arama yapar" time="6.892">
+<testsuite name="Cucumber" time="24.176" tests="2" skipped="0" failures="2" errors="0">
+<testcase classname="US002 Parametre Kullanimi" name="TC01 Kullanici amazonda parametreli arama yapar" time="13.718">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to locate element: #twotabsearchtextbox
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [75702e7f-3ffc-438d-a562-de64992a0c2d, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:5162, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.3.0, moz:processID: 36020, moz:profile: /var/folders/4p/1x9hkv8d6xx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:5162/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 75702e7f-3ffc-438d-a562-de64992a0c2d">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #twotabsearchtextbox
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [75702e7f-3ffc-438d-a562-de64992a0c2d, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:5162, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.3.0, moz:processID: 36020, moz:profile: /var/folders/4p/1x9hkv8d6xx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:5162/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 75702e7f-3ffc-438d-a562-de64992a0c2d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+	at stepDefinitions.AmazonStepdefs.userSearchByAmazon(AmazonStepdefs.java:59)
+	at ✽.user search "selenium" by Amazon(file:///Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/resources/features/US002_UseParamater.feature:9)
+]]>
+</failure>
 <system-out><![CDATA[
 Given user goes  to Amazon..................................................passed
-Then user search "selenium" by Amazon.......................................passed
-And User check the result of the result if that inclueds "selenium".........passed
-And user closes the Amazon..................................................passed
+Then user search "selenium" by Amazon.......................................failed
+And User check the result of the result if that inclueds "selenium".........skipped
+And user closes the Amazon..................................................skipped
 ]]></system-out>
 </testcase>
-<testcase classname="US002 Parametre Kullanimi" name="TC02 Kullanici amazonda parametreli arama yapar" time="5.105">
+<testcase classname="US002 Parametre Kullanimi" name="TC02 Kullanici amazonda parametreli arama yapar" time="10.265">
+<failure type="org.openqa.selenium.NoSuchElementException" message="Unable to locate element: #twotabsearchtextbox
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [75702e7f-3ffc-438d-a562-de64992a0c2d, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:5162, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.3.0, moz:processID: 36020, moz:profile: /var/folders/4p/1x9hkv8d6xx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:5162/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 75702e7f-3ffc-438d-a562-de64992a0c2d">
+<![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #twotabsearchtextbox
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [75702e7f-3ffc-438d-a562-de64992a0c2d, findElement {using=id, value=twotabsearchtextbox}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 123.0.1, moz:accessibilityChecks: false, moz:buildID: 20240304104836, moz:debuggerAddress: 127.0.0.1:5162, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.3.0, moz:processID: 36020, moz:profile: /var/folders/4p/1x9hkv8d6xx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:5162/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 75702e7f-3ffc-438d-a562-de64992a0c2d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy22.sendKeys(Unknown Source)
+	at stepDefinitions.AmazonStepdefs.userSearchByAmazon(AmazonStepdefs.java:59)
+	at ✽.user search "Java" by Amazon(file:///Users/mustafa/IdeaProjects/com.cucumberPrj/src/test/resources/features/US002_UseParamater.feature:19)
+]]>
+</failure>
 <system-out><![CDATA[
 Given user goes  to Amazon..................................................passed
-Then user search "Java" by Amazon...........................................passed
-And User check the result of the result if that inclueds "Java".............passed
-And user closes the Amazon..................................................passed
+Then user search "Java" by Amazon...........................................failed
+And User check the result of the result if that inclueds "Java".............skipped
+And user closes the Amazon..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

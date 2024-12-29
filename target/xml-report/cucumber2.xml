@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.151" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Us009_Practice Url and User UI Testing" name=":Test of User and Url - Example #1.1" time="11.019">
+<testsuite name="Cucumber" time="11.113" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Us009_Practice Url and User UI Testing" name=":Test of User and Url - Example #1.1" time="10.955">
 <system-out><![CDATA[
 Given user goes "webUniUrl".................................................passed
 Then User goes the loginPortal..............................................passed

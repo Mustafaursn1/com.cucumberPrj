@@ -106,4 +106,9 @@ public class AmazonStepdefs {
     public void userClosesThePage() {
         Driver.quitDriver();
     }
+
+    @And("user quit the Bbrowser")
+    public void userQuitTheBbrowser() {
+        Driver.quitDriver();
+    }
 }
